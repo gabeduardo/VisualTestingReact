@@ -1,30 +1,30 @@
-import React from "react";
-import ProductList, { statusTypes } from "./ProductList";
-import { action } from "@storybook/addon-actions";
+import React from 'react';
+import { action } from '@storybook/addon-actions';
+import ProductList, { statusTypes } from './ProductList';
 
-export default { title: "patterns/ProductList" };
+export default { title: 'patterns/ProductList' };
 
 const data = [
   {
     id: 1,
-    name: "Mocha",
+    name: 'Mocha',
     price: 3.5,
-    onAddToCart: action("ON ADD TO CART"),
-    imageUrl: "https://source.unsplash.com/tNALoIZhqVM/200x100/",
+    onAddToCart: action('ON ADD TO CART'),
+    imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
   },
   {
     id: 2,
-    name: "Latte",
+    name: 'Latte',
     price: 3.5,
-    onAddToCart: action("ON ADD TO CART"),
-    imageUrl: "https://source.unsplash.com/tNALoIZhqVM/200x100/",
+    onAddToCart: action('ON ADD TO CART'),
+    imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
   },
   {
     id: 3,
-    name: "Vanilla Latte",
+    name: 'Vanilla Latte',
     price: 3.5,
-    onAddToCart: action("ON ADD TO CART"),
-    imageUrl: "https://source.unsplash.com/tNALoIZhqVM/200x100/",
+    onAddToCart: action('ON ADD TO CART'),
+    imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
   },
 ];
 

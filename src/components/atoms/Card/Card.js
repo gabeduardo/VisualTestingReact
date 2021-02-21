@@ -1,7 +1,8 @@
 import React from "react";
 
-export default function Card({ children, highlight }) {
-  const cardClassName = highlight ? "card sale" : "card";
+import "./Card.css";
 
-  return <div className={cardClassName}>{children}</div>;
+
+export default function Card({ children, highlight }) {
+  return <div className="card">{children}</div>;
 }
