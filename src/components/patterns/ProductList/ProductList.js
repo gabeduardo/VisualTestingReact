@@ -1,14 +1,15 @@
-import React from "react";
-import ProductListItem from "../ProductListItem";
+/* eslint-disable react/prop-types */
+import React from 'react';
+import ProductListItem from '../ProductListItem';
 
 // This is a simple loading component that we'll want to switch out later
 const Loading = () => <span>Loading</span>;
 const Error = ({ message }) => <span>An error has occurred! {message}</span>;
 
 export const statusTypes = {
-  loading: "loading",
-  errored: "errored",
-  loaded: "loaded",
+  loading: 'loading',
+  errored: 'errored',
+  loaded: 'loaded',
 };
 
 export default function ProductList({ status, data, onAddToCart }) {

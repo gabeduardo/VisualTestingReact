@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Card.css';
 
-import "./Card.css";
-
-
-export default function Card({ children, highlight }) {
+export default function Card({ children }) {
   return <div className="card">{children}</div>;
 }
+
+Card.propTypes = {
+  children: PropTypes.element.isRequired,
+};
